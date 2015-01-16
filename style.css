@@ -27,5 +27,8 @@ tbody tr:nth-child(even) {
     background-color:lightblue;   
 }
 
-
+/*Hover over a dt entry -> purple background*/
+dt:hover{
+    background-color:purple;
+}
 
