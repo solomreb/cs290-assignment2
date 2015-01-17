@@ -9,12 +9,14 @@ tbody th:nth-child(1) {
     }
 
 /*First non-header cell of each non-header row has red text*/
-.foo{
-    color:red;
+tbody td:nth-of-type(1) { 
+    color:red; 
 }
+
 /*Third non-header cell of each non-header row has blue text*/
-.bar{
-    color:blue;
+
+tbody td:nth-of-type(3) {
+    color:blue; 
 }
 
 /*Odd non-header/footer rows should have a light green background*/
@@ -27,8 +29,25 @@ tbody tr:nth-child(even) {
     background-color:lightblue;   
 }
 
-/*Hover over a dt entry -> purple background*/
-dt:hover{
+/*Hover over a dt entry -> dd gets purple background*/
+dt:hover + dd {
     background-color:purple;
 }
 
+.outer-content{
+    width:75%;
+    background-color:pink;
+    margin-top: 20px;
+    text-align:center;
+    padding-bottom: 20px;
+}
+
+.inner-content{
+    background-color:lightblue;
+    width: 75%;
+    margin-left:12.5%;
+}
+
+img {
+    float:left;
+}
